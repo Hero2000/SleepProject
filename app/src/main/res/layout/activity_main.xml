@@ -3,6 +3,91 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
+    <!-- 顶部中间按钮 -->
+    <Button
+        android:id="@+id/topCenterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="顶部中间"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- 顶部左侧按钮 -->
+    <Button
+        android:id="@+id/topLeftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="顶部左侧"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- 顶部右侧按钮 -->
+    <Button
+        android:id="@+id/topRightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="顶部右侧"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+    <!-- 左侧中间按钮 -->
+    <Button
+        android:id="@+id/leftCenterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="左侧中间"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- 右侧中间按钮 -->
+    <Button
+        android:id="@+id/rightCenterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="右侧中间"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+    <!-- 底部左侧按钮 -->
+    <Button
+        android:id="@+id/bottomLeftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="底部左侧"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- 底部中间按钮 -->
+    <Button
+        android:id="@+id/bottomCenterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="底部中间"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- 底部右侧按钮 -->
+    <Button
+        android:id="@+id/bottomRightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="底部右侧"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <EditText
+        android:id="@+id/aboveTextViewEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入ip port eg:ws://172.23.52.13:5000"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:layout_above="@id/textView"
+        android:layout_centerHorizontal="true"/>
+
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -14,7 +99,27 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click Me"
+        android:text="打开 websocket"
         android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入消息"
+        android:layout_below="@id/button"
+        android:layout_margin="16dp"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/sendbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:layout_below="@id/inputEditText"
+        android:layout_centerHorizontal="true"/>
+
+
+
 </RelativeLayout>
